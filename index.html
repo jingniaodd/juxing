@@ -57,13 +57,19 @@
         a.button:hover {
             background-color: #2980b9;
         }
-        .id-list {
+        .id-card {
             background-color: #ecf0f1;
-            padding: 10px 15px;
-            border-radius: 6px;
-            margin: 8px 0;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 10px 0;
             font-family: monospace;
             font-size: 15px;
+            line-height: 1.6;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .id-card span.label {
+            font-weight: bold;
+            color: #333;
         }
         .id-info {
             font-size: 18px;
@@ -110,26 +116,44 @@
             font-weight: bold;
             font-size: 17px;
         }
+        .download-tip {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            background-color: #fff3cd;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 2px solid #e74c3c;
+            display: inline-block;
+        }
         .download-buttons {
             text-align: center;
             margin-top: 15px;
         }
-        .download-tip {
-            font-size: 15px;
-            font-weight: 500;
-            color: #555;
-            margin-bottom: 8px;
-        }
 
-        /* 新增闪动动画 */
-        @keyframes flash {
-            0%, 100% { color: red; }
-            50% { color: orange; }
+        /* 醒目公告样式 */
+        @keyframes gradient-border {
+            0% { border-color: #e74c3c; background-color: #fff3cd; }
+            50% { border-color: #e67e22; background-color: #fff1a8; }
+            100% { border-color: #e74c3c; background-color: #fff3cd; }
         }
-        .flash-text {
-            font-size: 22px; /* 放大字体 */
+        .notice-text {
+            color: red;
             font-weight: bold;
-            animation: flash 1s infinite;
+            font-size: 22px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 2px solid #e74c3c;
+            background-color: #fff3cd;
+            display: inline-block;
+            animation: gradient-border 2s infinite;
+        }
+        .black-text {
+            color: black;
+            font-size: 22px;
+            font-weight: normal;
+            display: inline-block;
+            margin-bottom: 6px;
         }
     </style>
 </head>
@@ -145,31 +169,42 @@
         </p>
 
         <div class="download-buttons">
-            <p class="download-tip">安卓用户请点击下载 Safew 应用</p>
+            <p class="download-tip">
+                安卓用户请点击按钮下载 Safew 应用
+            </p>
             <a class="button" href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank">安卓下载</a>
         </div> 
+
         <div class="id-info">苹果用户：</div>
         <div class="id-highlight">使用海外ID下载，只能登录商店下载，不要登录设置</div>
-        <div class="id-list">
-            苹果ID：账号：bsrordq9u17@hotmail.com 密码：c76teRp6LV6Y5mF1
+
+        <div class="id-card">
+            <span class="label">账号：</span>bsrordq9u17@hotmail.com<br>
+            <span class="label">密码：</span>c76teRp6LV6Y5mF1
         </div>
-        <div class="id-list">
-            苹果ID：账号：jroberts48@hotmail.com 密码：w69zVx6R48UH9esl
+        <div class="id-card">
+            <span class="label">账号：</span>jroberts48@hotmail.com<br>
+            <span class="label">密码：</span>w69zVx6R48UH9esl
         </div>
     </div>
 
     <div class="container">
-        <!-- 联系我们 放前面 -->
+        <!-- 联系我们 -->
         <div class="section">
             <h2>联系我们</h2>
             <p>
-                <span class="flash-text">
-                    下载完成 Safew 后，使用邮箱注册，添加QQ群内@你的专属助理Safew账号，邀请你入社区交流群。
+                <span class="black-text">
+                    下载完成Safew后，使用邮箱注册
+                </span>
+            </p>
+            <p>
+                <span class="notice-text">
+                    添加QQ群内@你的专属助理Safew账号，邀请你入社区交流群。
                 </span>
             </p>
         </div>
 
-        <!-- 我们的服务 放最下面 -->
+        <!-- 我们的服务 -->
         <div class="section">
             <h2>我们的服务</h2>
             <ul>

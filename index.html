@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#0a192f">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="巨星SVIP俱乐部 - 专业加密货币交易社区，提供高胜率策略和实时行情分析">
-    <link rel="apple-touch-icon" href="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-be4g95zd3a/1936572578799419399~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&x-expires=1778487772&x-signature=3Jd7PBRlwJr8F6AaeLKm2lXaE4U%3D">
     <title>巨星SVIP俱乐部 - 专业加密货币交易社区</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,31 +17,26 @@
                 extend: {
                     colors: {
                         primary: {
-                            DEFAULT: '#0a192f',
-                            light: '#172a46',
+                            DEFAULT: '#ffffff',
+                            light: '#f8f9fa',
                         },
                         accent: {
-                            DEFAULT: '#64ffda',
-                            gold: '#ffd700',
+                            DEFAULT: '#3b82f6',
+                            gold: '#f59e0b',
                             orange: '#e67e22',
                         },
-                        dark: '#020c1b',
+                        dark: '#1f2937',
                         light: '#f8f9fa',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        mono: ['Roboto Mono', 'monospace'],
-                    },
-                    boxShadow: {
-                        'glow': '0 0 15px rgba(100, 255, 218, 0.3)',
-                        'gold': '0 0 15px rgba(255, 215, 0, 0.3)',
                     },
                 }
             }
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
         html {
             scroll-behavior: smooth;
@@ -50,78 +44,35 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a192f;
-            color: #f8f9fa;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(90deg, #64ffda, #ffd700);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .hero-bg {
-            background-image: url('https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/3abf7791326f4e79af2fd2104248ab54~tplv-a9rns2rl98-image.image?rcl=20251112162231E680818B6D5D1DB93F1F&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1765527792&x-signature=VoK7vN3nof5QhEuE33lIqXoAOUo%3D');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.95));
-            z-index: 1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .card {
-            background: rgba(23, 42, 70, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(100, 255, 218, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.2);
+            background-color: #ffffff;
+            color: #1f2937;
         }
         
         .btn-primary {
-            background: linear-gradient(90deg, #64ffda, #52e0b5);
-            color: #0a192f;
+            background-color: #3b82f6;
+            color: white;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.4);
+        .btn-primary:active {
+            background-color: #2563eb;
         }
         
         .btn-secondary {
-            background: linear-gradient(90deg, #ffd700, #ffed4e);
-            color: #0a192f;
+            background-color: #f59e0b;
+            color: white;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         
-        .btn-secondary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        .btn-secondary:active {
+            background-color: #d97706;
         }
         
         .nav-link {
             position: relative;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         
         .nav-link::after {
@@ -131,8 +82,8 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #64ffda;
-            transition: width 0.3s ease;
+            background-color: #3b82f6;
+            transition: width 0.2s ease;
         }
         
         .nav-link:hover::after {
@@ -142,153 +93,38 @@
         .section-title {
             position: relative;
             display: inline-block;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
         
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -8px;
             left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #64ffda, #ffd700);
+            width: 50px;
+            height: 2px;
+            background-color: #3b82f6;
+        }
+        
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease;
+        }
+        
+        .card:active {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         
         .id-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 3px solid #64ffda;
-            transition: all 0.3s ease;
-        }
-        
-        .id-card:hover {
-            transform: translateX(5px);
-            border-left-color: #ffd700;
+            background-color: #f8f9fa;
+            border-left: 3px solid #3b82f6;
         }
         
         .service-icon {
-            background: linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(255, 215, 0, 0.2));
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .service-card:hover .service-icon {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(100, 255, 218, 0.4);
-        }
-        
-        .notice-pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(230, 126, 34, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(230, 126, 34, 0);
-            }
-        }
-        
-        .bitcoin-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-            100% {
-                transform: translateY(0px);
-            }
-        }
-        
-        /* 移动端优化 */
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .section-title {
-                font-size: 1.75rem;
-            }
-            
-            /* 增大触摸目标 */
-            .btn-primary, .btn-secondary {
-                min-height: 48px;
-                min-width: 48px;
-            }
-            
-            /* 优化导航菜单 */
-            #mobile-menu a {
-                padding: 12px 0;
-                font-size: 1.1rem;
-            }
-            
-            /* 优化服务卡片 */
-            .service-card {
-                padding: 1.5rem;
-            }
-            
-            /* 优化表格显示 */
-            .overflow-x-auto {
-                -webkit-overflow-scrolling: touch;
-            }
-        }
-        
-        @media (max-width: 640px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            /* 进一步优化移动端字体大小 */
-            p, li {
-                font-size: 16px; /* 确保移动端字体不小于16px，避免iOS缩放 */
-            }
-            
-            /* 优化ID卡片在小屏幕上的显示 */
-            .id-card {
-                padding: 1rem;
-            }
-            
-            .id-card p {
-                font-size: 14px;
-            }
-            
-            /* 优化图表高度 */
-            #btcChart {
-                height: 200px !important;
-            }
-        }
-        
-        /* 触摸设备优化 */
-        @media (hover: none) and (pointer: coarse) {
-            .card:hover {
-                transform: none;
-                box-shadow: 0 4px 15px rgba(100, 255, 218, 0.15);
-            }
-            
-            .btn-primary:hover, .btn-secondary:hover {
-                transform: none;
-            }
-            
-            .service-card:hover .service-icon {
-                transform: none;
-            }
-            
-            .id-card:hover {
-                transform: none;
-            }
+            background-color: #eff6ff;
+            color: #3b82f6;
         }
         
         /* 复制按钮样式 */
@@ -296,70 +132,80 @@
             transition: all 0.2s ease;
         }
         
-        .copy-btn:hover {
-            background-color: rgba(100, 255, 218, 0.2);
+        .copy-btn:active {
+            background-color: #e5e7eb;
         }
         
         .copy-btn.copied {
-            background-color: rgba(46, 213, 115, 0.2);
-            color: #2ed573;
+            background-color: #d1fae5;
+            color: #065f46;
         }
         
-        /* 复制提示动画 */
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translateY(10px); }
-            20% { opacity: 1; transform: translateY(0); }
-            80% { opacity: 1; transform: translateY(0); }
-            100% { opacity: 0; transform: translateY(-10px); }
-        }
-        
+        /* 复制提示 */
         .copy-toast {
             animation: fadeInOut 2s ease forwards;
+        }
+        
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 640px) {
+            .btn-primary, .btn-secondary {
+                min-height: 48px;
+                min-width: 48px;
+            }
+            
+            p, li {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- 导航栏 -->
-    <nav class="fixed top-0 left-0 right-0 bg-primary z-50 py-3 px-4 md:py-4 md:px-6 lg:px-12 transition-all duration-300">
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-3 px-4">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
-                <img src="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-be4g95zd3a/1936572578799419399~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&x-expires=1778487772&x-signature=3Jd7PBRlwJr8F6AaeLKm2lXaE4U%3D" alt="Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                <span class="text-base sm:text-xl font-bold gradient-text">巨星SVIP俱乐部</span>
+                <span class="text-xl font-bold text-dark">巨星SVIP俱乐部</span>
             </a>
             
-            <div class="hidden md:flex space-x-6 lg:space-x-8">
-                <a href="#home" class="nav-link text-light hover:text-accent">首页</a>
-                <a href="#contact" class="nav-link text-light hover:text-accent">联系我们</a>
-                <a href="#download" class="nav-link text-light hover:text-accent">下载指南</a>
-                <a href="#services" class="nav-link text-light hover:text-accent">我们的服务</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link text-dark hover:text-accent">首页</a>
+                <a href="#contact" class="nav-link text-dark hover:text-accent">联系我们</a>
+                <a href="#download" class="nav-link text-dark hover:text-accent">下载指南</a>
+                <a href="#services" class="nav-link text-dark hover:text-accent">我们的服务</a>
             </div>
             
-            <button class="md:hidden text-light focus:outline-none p-2" id="mobile-menu-button" aria-label="菜单" aria-expanded="false">
-                <i class="fas fa-bars text-2xl"></i>
+            <button class="md:hidden text-dark focus:outline-none p-2" id="mobile-menu-button" aria-label="菜单" aria-expanded="false">
+                <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
         
         <!-- 移动端菜单 -->
-        <div class="md:hidden hidden bg-primary-light mt-3 py-4 px-6 rounded-b-lg shadow-lg" id="mobile-menu">
+        <div class="md:hidden hidden bg-white mt-3 py-4 px-6 rounded-b-lg shadow-md" id="mobile-menu">
             <div class="flex flex-col space-y-4">
-                <a href="#home" class="text-light hover:text-accent py-2 border-b border-gray-700">首页</a>
-                <a href="#contact" class="text-light hover:text-accent py-2 border-b border-gray-700">联系我们</a>
-                <a href="#download" class="text-light hover:text-accent py-2 border-b border-gray-700">下载指南</a>
-                <a href="#services" class="text-light hover:text-accent py-2">我们的服务</a>
+                <a href="#home" class="text-dark hover:text-accent py-2 border-b border-gray-200">首页</a>
+                <a href="#contact" class="text-dark hover:text-accent py-2 border-b border-gray-200">联系我们</a>
+                <a href="#download" class="text-dark hover:text-accent py-2 border-b border-gray-200">下载指南</a>
+                <a href="#services" class="text-dark hover:text-accent py-2">我们的服务</a>
             </div>
         </div>
     </nav>
 
     <!-- 英雄区 -->
-    <section id="home" class="hero-bg min-h-screen flex items-center pt-16">
-        <div class="container mx-auto px-4 sm:px-6 md:px-12 py-16 sm:py-20 hero-content">
+    <section id="home" class="min-h-screen flex items-center pt-16 bg-white">
+        <div class="container mx-auto px-4 py-16 hero-content">
             <div class="flex flex-col items-center text-center">
-                <div class="mb-10 sm:mb-12">
-                    <img src="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-be4g95zd3a/1936572578799419399~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&x-expires=1778487772&x-signature=3Jd7PBRlwJr8F6AaeLKm2lXaE4U%3D" alt="Bitcoin" class="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 bitcoin-animation rounded-xl shadow-gold">
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        欢迎加入<span class="gradient-text">巨星SVIP俱乐部</span>
+                <div class="mb-10">
+                    <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-dark">
+                        欢迎加入<span class="text-accent">巨星SVIP俱乐部</span>
                     </h1>
-                    <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    <p class="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                         专业加密货币交易社区，90%高胜率策略，多位大佬分析师，打造最强内群。
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -376,25 +222,25 @@
     </section>
 
     <!-- 联系我们 -->
-    <section id="contact" class="py-16 sm:py-20 bg-primary-light">
-        <div class="container mx-auto px-4 sm:px-6 md:px-12">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-                <span class="gradient-text">联系我们</span>
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+                <span class="text-dark">联系我们</span>
             </h2>
             
             <div class="card rounded-xl p-6 sm:p-8 max-w-3xl mx-auto">
-                <div class="text-center mb-6 sm:mb-8">
-                    <div class="notice-pulse inline-block bg-accent-orange text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold text-base sm:text-xl mb-4">
+                <div class="text-center mb-6">
+                    <div class="inline-block bg-accent-orange text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-bold text-base sm:text-xl mb-4">
                         <i class="fas fa-bell mr-2"></i>重要通知
                     </div>
-                    <p class="text-gray-300 text-base sm:text-lg">
+                    <p class="text-gray-600 text-base sm:text-lg">
                         国内币圈交流过于敏感，目前 QQ、微信以及钉钉交流群都换成 Safew 聊天室，接下来我们的社区交流软件主要在 Safew 聊天室。
                     </p>
                 </div>
                 
-                <div class="bg-primary rounded-lg p-4 sm:p-6 border-l-4 border-accent mb-6">
+                <div class="bg-gray-50 rounded-lg p-4 sm:p-6 border-l-4 border-accent mb-6">
                     <h3 class="text-lg sm:text-xl font-semibold mb-3 text-accent">加入我们的步骤</h3>
-                    <ol class="list-decimal list-inside space-y-3 text-gray-300">
+                    <ol class="list-decimal list-inside space-y-3 text-gray-600">
                         <li class="text-base">下载完成 Safew 应用</li>
                         <li class="text-base">使用邮箱注册账号</li>
                         <li class="text-base">添加 QQ 群内@你的专属助理 Safew 账号</li>
@@ -412,43 +258,43 @@
     </section>
 
     <!-- 下载指南 -->
-    <section id="download" class="py-16 sm:py-20 bg-primary">
-        <div class="container mx-auto px-4 sm:px-6 md:px-12">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-                <span class="gradient-text">下载指南</span>
+    <section id="download" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+                <span class="text-dark">下载指南</span>
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
                 <!-- 安卓下载 -->
-                <div class="card rounded-xl p-6 sm:p-8">
+                <div class="card rounded-xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center mb-4 sm:mb-6">
                         <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mr-3 sm:mr-4">
-                            <i class="fab fa-android text-2xl sm:text-3xl text-accent"></i>
+                            <i class="fab fa-android text-2xl sm:text-3xl"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-semibold">安卓用户</h3>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-dark">安卓用户</h3>
                     </div>
-                    <p class="text-gray-300 mb-4 sm:mb-6 text-base">点击下方按钮直接下载 Safew 应用</p>
+                    <p class="text-gray-600 mb-4 sm:mb-6 text-base">点击下方按钮直接下载 Safew 应用</p>
                     <a href="https://safew.ftihzjg.com/download_app/com.i0vrm1.jjb71gjo_1.14.2_251109_afbe50e3.apk" target="_blank" class="btn-primary py-3 px-6 sm:px-8 rounded-lg text-center block w-full min-h-[48px] flex items-center justify-center text-lg">
                         <i class="fas fa-download mr-2"></i>安卓下载
                     </a>
                 </div>
                 
                 <!-- 苹果下载 -->
-                <div class="card rounded-xl p-6 sm:p-8">
+                <div class="card rounded-xl p-6 sm:p-8 shadow-sm">
                     <div class="flex items-center mb-4 sm:mb-6">
                         <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mr-3 sm:mr-4">
-                            <i class="fab fa-apple text-2xl sm:text-3xl text-accent"></i>
+                            <i class="fab fa-apple text-2xl sm:text-3xl"></i>
                         </div>
-                        <h3 class="text-xl sm:text-2xl font-semibold">苹果用户</h3>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-dark">苹果用户</h3>
                     </div>
-                    <p class="text-gray-300 mb-4 sm:mb-6 text-base">使用海外ID下载，只能登录商店（App Store）下载，不要登录设置，下载完成后退出登录。</p>
+                    <p class="text-gray-600 mb-4 sm:mb-6 text-base">使用海外ID下载，只能登录商店（App Store）下载，不要登录设置，下载完成后退出登录。</p>
                     
-                    <div class="bg-accent-orange/20 border border-accent-orange rounded-lg p-4 mb-6">
+                    <div class="bg-accent-orange/10 border border-accent-orange rounded-lg p-4 mb-6">
                         <div class="flex items-start">
                             <i class="fas fa-exclamation-triangle text-accent-orange text-xl mt-1 mr-3"></i>
                             <div>
                                 <h4 class="text-accent-orange font-bold text-lg mb-2">⚠️ 重要提醒 ⚠️</h4>
-                                <p class="text-gray-300 text-base">请务必只在App Store中登录海外ID，不要在系统设置中登录！下载完成后请立即退出登录，以保护您的账户安全。</p>
+                                <p class="text-gray-600 text-base">请务必只在App Store中登录海外ID，不要在系统设置中登录！下载完成后请立即退出登录，以保护您的账户安全。</p>
                             </div>
                         </div>
                     </div>
@@ -520,78 +366,64 @@
     </section>
 
     <!-- 我们的服务 -->
-    <section id="services" class="py-16 sm:py-20 bg-primary-light">
-        <div class="container mx-auto px-4 sm:px-6 md:px-12">
-            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-                <span class="gradient-text">我们的服务</span>
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-center mb-8">
+                <span class="text-dark">我们的服务</span>
             </h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- 服务卡片 1 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
+                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
                     <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-chart-line text-2xl sm:text-3xl text-accent"></i>
+                        <i class="fas fa-chart-line text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">24小时实时策略</h3>
-                    <p class="text-gray-300 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">24小时实时策略</h3>
+                    <p class="text-gray-600 text-base">
                         提供24小时免费实时策略单，日内高胜率短单策略，帮助您把握每一个交易机会。
                     </p>
                 </div>
                 
                 <!-- 服务卡片 2 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
+                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
                     <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-video text-2xl sm:text-3xl text-accent"></i>
+                        <i class="fas fa-comments text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">每日直播教学</h3>
-                    <p class="text-gray-300 text-base mb-4">
-                        每日4场腾讯会议直播教学，从基础到高级，全方位提升您的交易技能。
-                    </p>
-                    <a href="https://meeting.tencent.com/p/6032761810" target="_blank" class="btn-primary py-2 px-4 rounded-lg text-center block w-full min-h-[48px] flex items-center justify-center text-base">
-                        <i class="fas fa-desktop mr-2"></i>进入腾讯会议直播
-                    </a>
-                </div>
-                
-                <!-- 服务卡片 3 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
-                    <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-comments text-2xl sm:text-3xl text-accent"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">专家在线解读</h3>
-                    <p class="text-gray-300 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">专家在线解读</h3>
+                    <p class="text-gray-600 text-base">
                         早晚盘专家在线解读，大事件定点分析指导，助您在市场波动中把握方向。
                     </p>
                 </div>
                 
-                <!-- 服务卡片 4 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
+                <!-- 服务卡片 3 -->
+                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
                     <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-graduation-cap text-2xl sm:text-3xl text-accent"></i>
+                        <i class="fas fa-graduation-cap text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">专业教学指导</h3>
-                    <p class="text-gray-300 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">专业教学指导</h3>
+                    <p class="text-gray-600 text-base">
                         初级入学指导，中高级K线大师指导在线教学，系统化提升您的交易知识体系。
                     </p>
                 </div>
                 
-                <!-- 服务卡片 5 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
+                <!-- 服务卡片 4 -->
+                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
                     <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-percentage text-2xl sm:text-3xl text-accent"></i>
+                        <i class="fas fa-percentage text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">高额返佣</h3>
-                    <p class="text-gray-300 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">高额返佣</h3>
+                    <p class="text-gray-600 text-base">
                         注册会员可获得高额返佣，降低交易成本，提高您的投资回报率。
                     </p>
                 </div>
                 
-                <!-- 服务卡片 6 -->
-                <div class="service-card card rounded-xl p-5 sm:p-6">
+                <!-- 服务卡片 5 -->
+                <div class="service-card card rounded-xl p-5 sm:p-6 shadow-sm">
                     <div class="service-icon w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6 mx-auto sm:mx-0">
-                        <i class="fas fa-users text-2xl sm:text-3xl text-accent"></i>
+                        <i class="fas fa-users text-2xl sm:text-3xl"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left">精英社区</h3>
-                    <p class="text-gray-300 text-base">
+                    <h3 class="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-dark">精英社区</h3>
+                    <p class="text-gray-600 text-base">
                         加入我们的精英社区，与众多资深交易者交流经验，共享市场洞察。
                     </p>
                 </div>
@@ -600,34 +432,33 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-dark py-8 sm:py-12">
-        <div class="container mx-auto px-4 sm:px-6 md:px-12">
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <a href="#" class="flex items-center space-x-2">
-                        <img src="https://p26-doubao-search-sign.byteimg.com/tos-cn-i-be4g95zd3a/1936572578799419399~tplv-be4g95zd3a-image.jpeg?rk3s=542c0f93&x-expires=1778487772&x-signature=3Jd7PBRlwJr8F6AaeLKm2lXaE4U%3D" alt="Logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                        <span class="text-base sm:text-xl font-bold gradient-text">巨星SVIP俱乐部</span>
+                        <span class="text-xl font-bold text-dark">巨星SVIP俱乐部</span>
                     </a>
-                    <p class="text-gray-400 mt-2 text-sm">专业加密货币交易社区</p>
+                    <p class="text-gray-500 mt-2 text-sm">专业加密货币交易社区</p>
                 </div>
                 
                 <div class="flex space-x-4 sm:space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors p-2" aria-label="Telegram">
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Telegram">
                         <i class="fab fa-telegram-plane text-xl sm:text-2xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors p-2" aria-label="Twitter">
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Twitter">
                         <i class="fab fa-twitter text-xl sm:text-2xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors p-2" aria-label="Discord">
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="Discord">
                         <i class="fab fa-discord text-xl sm:text-2xl"></i>
                     </a>
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors p-2" aria-label="WeChat">
+                    <a href="#" class="text-gray-500 hover:text-accent transition-colors p-2" aria-label="WeChat">
                         <i class="fab fa-weixin text-xl sm:text-2xl"></i>
                     </a>
                 </div>
             </div>
             
-            <hr class="border-gray-800 my-6 sm:my-8">
+            <hr class="border-gray-200 my-6">
             
             <div class="text-center text-gray-500 text-sm">
                 <p>&copy; 2025 巨星SVIP俱乐部. 保留所有权利.</p>
@@ -669,18 +500,6 @@
             });
         });
         
-        // 导航栏滚动效果
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('bg-primary/95', 'backdrop-blur-md', 'shadow-lg');
-                nav.classList.remove('bg-primary');
-            } else {
-                nav.classList.remove('bg-primary/95', 'backdrop-blur-md', 'shadow-lg');
-                nav.classList.add('bg-primary');
-            }
-        });
-        
         // 移动端菜单无障碍支持
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             const mobileMenu = document.getElementById('mobile-menu');
@@ -701,17 +520,6 @@
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
             }
-        });
-        
-        // 添加触摸反馈
-        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
-            button.addEventListener('touchstart', function() {
-                this.classList.add('opacity-90', 'scale-95');
-            });
-            
-            button.addEventListener('touchend', function() {
-                this.classList.remove('opacity-90', 'scale-95');
-            });
         });
         
         // 复制功能
@@ -751,7 +559,7 @@
             
             // 创建提示元素
             const toast = document.createElement('div');
-            toast.className = 'copy-toast bg-accent text-primary px-4 py-2 rounded-lg font-semibold shadow-lg';
+            toast.className = 'copy-toast bg-green-500 text-white px-4 py-2 rounded-lg font-semibold shadow-lg';
             toast.textContent = message;
             
             // 添加到容器
